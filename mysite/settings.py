@@ -113,11 +113,19 @@ USE_I18N = True
 
 USE_TZ = True
 
+ALLOWED_HOSTS = ['sayma123.pythonanywhere.com']
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = 'static/'
+STATICFILES_DIRS = [
+    BASE_DIR / "static"
+    ]
+
+
+STATIC_ROOT = BASE_DIR / "staticfiles"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
@@ -125,10 +133,4 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-STATICFILES_DIRS = [
-    BASE_DIR / "static"
-    ]
 
-ALLOWED_HOSTS = ['sayma123.pythonanywhere.com']
-
-STATIC_ROOT = BASE_DIR / "staticfiles"
