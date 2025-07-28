@@ -29,9 +29,37 @@ A Django web application that scrapes all `<a>` tags from any given URL and disp
 
 ## 🗂 Project Structure
 
-
+link_scraper/
+├── scraper/
+│ ├── templates/
+│ │ └── result.html
+│ ├── static/
+│ │ └── js/copy.js
+│ ├── views.py
+│ ├── models.py
+│ ├── urls.py
+├── link_scraper/
+│ └── settings.py
+├── manage.py
+└── README.md
 
 ---
+
+## ✅ How to Use
+
+1. **Enter** any valid website URL on the homepage.
+2. **Click** on the `Scrape` button.
+
+### 📊 View:
+
+- All extracted `<a>` tag links displayed in a scrollable table.
+- A domain-wise link frequency chart.
+
+### 🛠️ Use:
+
+- 📋 **Copy** button to copy any link.
+- 🗑️ **Delete** button to remove a link.
+- 📁 **Export CSV** button to download scraped data.
 
 ## 📊 Link Analysis with Matplotlib
 
@@ -54,3 +82,14 @@ source env/bin/activate  # On Windows: env\Scripts\activate
 pip install -r requirements.txt
 python manage.py migrate
 python manage.py runserver
+```
+
+## 🖼️ Screenshot
+
+### 📌 Homepage UI
+![Homepage](./static/images/homepage.png)
+
+### 📌 Domain-wise Chart
+![Chart](./static/images/barchart.png)
+        (./static/images/scatterchart.png)
+
