@@ -87,9 +87,14 @@ python manage.py runserver
 ## 🖼️ Screenshot
 
 ### 📌 Homepage UI
+
 ![Homepage](./static/images/homepage.png)
 
 ### 📌 Domain-wise Chart
-![Chart](./static/images/barchart.png)
-        (./static/images/scatterchart.png)
 
+![Chart](./static/images/barchart.png)
+(./static/images/scatterchart.png)
+
+## 📡 Live Demo
+
+🔗 [Click here to view the Live Project](https://sayma123.pythonanywhere.com/)
