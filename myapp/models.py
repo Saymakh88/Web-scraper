@@ -9,3 +9,4 @@ class Link(models.Model):
     
     address=models.CharField(max_length=1000,null=True,blank=True)
     name=models.CharField(max_length=1000,null=True,blank=True)
+    timestamp = models.DateTimeField(auto_now_add=True)  # to track time
